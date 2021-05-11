@@ -12,6 +12,15 @@ export async function getStaticProps() {
   }
 }
 
+//If Server-Side Rendering instead:
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {
+//       // props for your component
+//     }
+//   }
+// }
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
